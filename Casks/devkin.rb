@@ -18,6 +18,11 @@ cask "devkin" do
 
   app "DevKin.app"
 
+  postinstall do
+    system_command "/usr/bin/xattr",
+      args: ["-dr", "com.apple.quarantine", "#{appdir}/DevKin.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/DevKin",
     "~/Library/Preferences/com.devkin.app.plist",
