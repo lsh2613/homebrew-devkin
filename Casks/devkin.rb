@@ -18,7 +18,7 @@ cask "devkin" do
 
   app "DevKin.app"
 
-  postinstall do
+  postflight do
     system_command "/usr/bin/xattr",
       args: ["-dr", "com.apple.quarantine", "#{appdir}/DevKin.app"]
   end
