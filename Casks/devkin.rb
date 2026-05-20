@@ -1,18 +1,18 @@
 cask "devkin" do
-  version "0.1.0"
+  version "1.0.0"
 
   on_arm do
-    sha256 "d387cfa98796e45ac665d3f7ec202666fd2e83659c3d6af11d24962ccb99be0c"
-    url "https://github.com/lsh2613/devkin-release/releases/download/v#{version}/DevKin-#{version}-arm64.dmg"
+    sha256 "f7aa64af8749377cfd1ed8740977fde231bd81f7c007fa2a9f6efca5ecdfd040"
+    url "https://github.com/lsh2613/homebrew-devkin/releases/download/v#{version}/DevKin-#{version}-arm64.dmg"
   end
   on_intel do
-    sha256 "3b8cbbbf27335baba045be48f0436a9dc5e613265d0ef449a4b58dc972233ed3"
-    url "https://github.com/lsh2613/devkin-release/releases/download/v#{version}/DevKin-#{version}-x64.dmg"
+    sha256 "3edabe298c68f6006089acf18201972f4cb4319a1f5f590e3b8f7913865baf6b"
+    url "https://github.com/lsh2613/homebrew-devkin/releases/download/v#{version}/DevKin-#{version}-x64.dmg"
   end
 
   name "DevKin"
   desc "macOS toolbox for developers (JSON, Byte, Base64, JWT, SQL, Markdown, HTML, Text)"
-  homepage "https://github.com/lsh2613/devkin-relase"
+  homepage "https://github.com/lsh2613/homebrew-devkin"
 
   auto_updates false
 
