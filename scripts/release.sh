@@ -62,7 +62,7 @@ fi
 # --- publish GitHub Release (download URL must be live before the cask push) ---
 echo "==> Publishing GitHub Release v$VERSION on $TAP_REPO"
 gh release create "v$VERSION" -R "$TAP_REPO" \
-  --title "DevKin v$VERSION" \
+  --title "🚀 v$VERSION" \
   --notes-file "$NOTES_FILE" \
   "$ARM_DMG" "$X64_DMG"
 
