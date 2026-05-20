@@ -1,0 +1,26 @@
+name: "🐞 Bug"
+description: "Did you encounter a bug?"
+labels: "🐞 Bug"
+body:
+  - type: input
+    attributes:
+      label: ✅ Version
+      description: Please enter the version you are using
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: 🖥️ CPU architecture
+      description: "Select your Mac CPU architecture. (Default: arm64)"
+      options:
+        - arm64 (Apple Silicon)
+        - x64 (mac-intel)
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 💣 Bug description
+      description: Please describe the bug you encountered or attach related images.
+    validations:
+      required: true

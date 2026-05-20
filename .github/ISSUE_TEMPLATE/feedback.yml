@@ -1,0 +1,10 @@
+name: "💭 Feedback"
+description: 'Do you have any suggestions?'
+labels: "💭 Feedback"
+body:
+  - type: textarea
+    attributes:
+      label: 💬 Description
+      description: Please explain your suggestions.
+    validations:
+      required: true
