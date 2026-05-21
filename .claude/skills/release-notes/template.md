@@ -11,8 +11,31 @@
 ### 🐞 버그 수정
 - <!-- 어떤 오류나 버그가 해결되었는지 상세 내용을 적어주세요. -->
 
-## ⚙️ 설치 / 업그레이드
+## 설치 / 업그레이드
 
 ```sh
 brew install --cask lsh2613/devkin/devkin   # 신규 설치
 brew upgrade --cask devkin                  # 업데이트
+```
+
+---
+
+## What's Changed
+
+<!-- Summarize the key changes in this release in a single sentence. -->
+
+### ✨ New Features
+- <!-- List newly available features or additions for users. -->
+
+### 🛠 Improvements
+- <!-- Describe how existing functionality became faster, easier, or more convenient. -->
+
+### 🐞 Bug Fixes
+- <!-- Describe which issues/bugs have been fixed (user-facing). -->
+
+## Install / Upgrade
+
+```sh
+brew install --cask lsh2613/devkin/devkin   # fresh install
+brew upgrade --cask devkin                  # upgrade
+```
