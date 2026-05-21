@@ -1,26 +1,24 @@
 ---
 name: release-notes
-description: DevKin GitHub Release 노트를 작성하는 양식과 규칙. 새 DevKin 버전의 릴리즈 노트를 준비할 때 사용한다.
+description: Guidelines and template for writing DevKin GitHub Release notes. Use this when preparing release notes for a new DevKin version.
 ---
 
-# DevKin 릴리즈 노트
+# DevKin Release Notes
 
-GitHub Release 본문을 작성하는 규칙입니다. 같은 디렉터리의 `template.md`가 양식이며, 템플릿은 **상단 한국어 / `---` 아래 영어** 두 섹션으로 구성됩니다.
+These are the rules for writing the body of a GitHub Release. Use `template.md` in the same directory as the template. The template is split into two sections: **Korean at the top / English below `---`**.
 
-## 절차
+## Procedure
 
-1. 직전 릴리즈 태그를 찾는다: `git describe --tags --abbrev=0 --match 'v*'`
-2. 그 태그 이후의 소스 커밋을 확인한다: `git log <tag>..HEAD`
-   태그가 없으면 최초 릴리즈 — 그때까지의 전체 변경을 요약한다.
-3. `template.md` 양식에 맞춰 한국어 섹션을 먼저 작성한 뒤, 영어 섹션에 의미가 유지되도록 번역해 같은 구조 노트를 작성하고 파일로 저장한다.
+1. Find the previous release tag: `git describe --tags --abbrev=0 --match 'v*'`
+2. Review commits since that tag: `git log <tag>..HEAD`
+   If there is no tag, this is the first release—summarize all changes up to this point.
+3. Fill out `template.md` and save the notes to a file: write the Korean section first, then translate it into the English section while preserving meaning and keeping the same structure.
 
-## 규칙
+## Rules
 
-- **요약한다.** 커밋 제목을 그대로 옮기지 않는다. 관련된 여러 커밋을 하나의
-  의미 단위로 묶어, 사용자가 무엇을 얻는지 한 줄로 설명한다.
-- **사용자 관점으로 쓴다.** 내부 구현이 아니라 사용자가 체감하는 변화를 적는다.
-- **노이즈를 버린다.** 사용자에게 영향이 없는 변경(리팩터링, 빌드 설정, 문서)은
-  생략한다.
-- **항목이 없는 섹션은(한/영 모두) 제목째로 삭제한다.**
-- **한/영 병기로 작성한다.** 위는 한국어, 아래는 그 내용을 영어로 번역하며 섹션/항목 구조는 가능한 한 동일하게 맞춘다.
-- "설치 / 업그레이드"(및 "Install / Upgrade") 블록은 `template.md`를 그대로 두고, `brew` 명령어는 수정하지 않는다.
+- **Summarize.** Do not copy commit titles verbatim. Group related commits into meaningful units and describe in one line what the user gets.
+- **Write from the user's perspective.** Describe user-facing outcomes rather than internal implementation details.
+- **Remove noise.** Omit changes that do not affect users (refactors, build configuration, documentation).
+- **Remove empty sections (in both Korean and English).** If a section has no items for this release, delete the heading as well.
+- **Write bilingually (Korean + English).** The top section is Korean; the section below `---` is an English translation. Keep section/item structure aligned as much as possible.
+- Leave the "Install / Upgrade" blocks (Korean "설치 / 업그레이드" and English "Install / Upgrade") exactly as in `template.md`; do not modify the `brew` commands.
