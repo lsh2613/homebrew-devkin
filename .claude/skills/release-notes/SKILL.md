@@ -5,14 +5,18 @@ description: Guidelines and template for writing DevKin GitHub Release notes. Us
 
 # DevKin Release Notes
 
-These are the rules for writing the body of a GitHub Release. Use `template.md` in the same directory as the template. The template is split into two sections: **Korean at the top / English below `---`**.
+These are the rules for turning a list of commits into the body of a GitHub Release. Use `template.md` in the same directory as the template. The template is split into two sections: **Korean at the top / English below `---`**.
+
+## Input
+
+This skill summarizes commits that are **handed to it by the source repo's `release` skill** — that skill computes the previous tag and the commit range, then invokes this one.
+
+The commits always come from the **DevKin source repository** (the repo with the `feat`/`fix` history), never from the `homebrew-devkin` distribution repo (which only holds cask and `release:` commits). If you do not have a commit list, you are at the wrong entry point — start from the source repo's `release` skill instead of computing tags here.
 
 ## Procedure
 
-1. Find the previous release tag: `git describe --tags --abbrev=0 --match 'v*'`
-2. Review commits since that tag: `git log <tag>..HEAD`
-   If there is no tag, this is the first release—summarize all changes up to this point.
-3. Fill out `template.md` and save the notes to a file: write the Korean section first, then translate it into the English section while preserving meaning and keeping the same structure.
+1. Fill out `template.md`: write the Korean section first, then translate it into the English section while preserving meaning and keeping the same structure.
+2. Save the completed notes to a file.
 
 ## Rules
 

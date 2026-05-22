@@ -2,8 +2,9 @@
 set -euo pipefail
 
 # Deploys a DevKin release: publishes a GitHub Release on homebrew-devkin
-# (dmgs + notes), commits + pushes the regenerated cask, and tags the source
-# repo. Run `scripts/build.sh <version>` in the DevKin source repo first.
+# (dmgs + notes), commits + pushes the regenerated cask, then commits, tags,
+# and pushes the source version bump. Run `scripts/build.sh <version>` in the
+# DevKin source repo first.
 #
 # This script lives in the homebrew-devkin repo but runs from within the DevKin
 # source tree, where homebrew-devkin is cloned at release/homebrew-devkin/.
@@ -72,15 +73,18 @@ git -C "$TAP_DIR" add Casks/devkin.rb
 git -C "$TAP_DIR" commit -m "release: v$VERSION"
 git -C "$TAP_DIR" push
 
-# --- tag the source repo for the next release's changelog boundary ---
+# --- commit the source version bump that build.sh left uncommitted, tag + push ---
+echo "==> Committing + pushing source version bump (release: v$VERSION)"
+git add package.json package-lock.json
+git commit -m "release: v$VERSION"
 git tag -f "v$VERSION"
+git push
+git push origin "v$VERSION"
 
 cat <<EOF
 
 Released v$VERSION
   • GitHub Release : https://github.com/$TAP_REPO/releases/tag/v$VERSION
   • Cask           : pushed to $TAP_REPO (commit "release: v$VERSION")
-  • Source tag     : v$VERSION (local — push with 'git push origin v$VERSION')
-
-Still manual: commit the package.json + package-lock.json version bump.
+  • Source commit  : "release: v$VERSION" + tag v$VERSION (pushed)
 EOF
