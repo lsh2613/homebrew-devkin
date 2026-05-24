@@ -83,7 +83,7 @@ Download the `.dmg` from [GitHub Releases](https://github.com/lsh2613/homebrew-d
 
 | Shortcut | Action |
 |----------|--------|
-| `⌘ K` | Move focus to the search box. Expands the sidebar first if collapsed |
+| `⌘ K` | Clear the current feature's input (when the Clear button is enabled) |
 | `⌘ 1` | Expand / collapse the sidebar |
 | `↑` / `↓` | Move between items in the feature list; from the search box, step to the active feature |
 | `Enter` | Open the selected feature / open the first search result |
