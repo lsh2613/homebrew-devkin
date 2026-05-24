@@ -35,6 +35,7 @@ DevKin은 macOS 네이티브 앱으로 자주 쓰는 개발 도구를 한 곳에
 | Base64 Image Converter | 이미지 ↔ Base64 양방향 변환. 드래그·붙여넣기, 실시간 미리보기 | `devkin://base64-image` |
 | JWT Converter | JWT 토큰 디코딩·검증·서명. HS/RS/ES/PS/EdDSA 지원 | `devkin://jwt` |
 | SQL Formatter | SQL 쿼리 자동 정렬. 키워드 케이스·들여쓰기 옵션, 구문 강조 | `devkin://sql` |
+| Text Diff | 두 텍스트를 줄·단어 단위로 비교해 추가·삭제·변경을 시각적으로 표시 | `devkin://diff` |
 | Text Inspector | 글자 수, 코드 포인트, 단어·줄 수, 인코딩별 바이트 수 | `devkin://text` |
 | Markdown Preview | 마크다운 실시간 렌더링. GFM 문법, HTML 복사 | `devkin://md` |
 | HTML Preview | HTML 소스 즉시 미리보기. 스크립트 실행 옵션(sandbox) | `devkin://html` |
@@ -82,10 +83,11 @@ brew upgrade --cask devkin
 |--------|------|
 | `⌘ K` | 검색창으로 포커스 이동. 사이드바가 접혀 있으면 자동으로 펼침 |
 | `⌘ 1` | 사이드바 펼치기 / 접기 |
-| `↑` / `↓` | 기능 목록에서 항목 이동 |
+| `↑` / `↓` | 기능 목록에서 항목 이동; 검색창에서는 현재 활성 기능으로 이동 |
 | `Enter` | 선택한 기능 열기 / 검색창에서 첫 번째 결과 열기 |
 | `Esc` | 기능 페이지로 포커스 이동 / 검색어 지우기 |
 | `Tab` | 현재 영역(사이드바 또는 기능 페이지) 내 다음 요소로 순환 이동 |
+| 문자 입력 | 기능 목록에 포커스가 있을 때 문자를 입력하면 검색창으로 이동하며 쿼리 시작 |
 
 ---
 

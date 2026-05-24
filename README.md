@@ -37,6 +37,7 @@ Bug reports and feature suggestions are welcome at [Issues](https://github.com/l
 | Base64 Image Converter | Encode images to Base64 or decode Base64 back into an image. Drag-and-drop, live preview | `devkin://base64-image` |
 | JWT Converter | Decode, verify, and sign JWT tokens. Supports HS/RS/ES/PS/EdDSA | `devkin://jwt` |
 | SQL Formatter | Auto-format SQL queries. Keyword case, indent options, syntax highlighting | `devkin://sql` |
+| Text Diff | Compare two texts line-by-side and word-by-word, highlighting additions, deletions, and changes | `devkin://diff` |
 | Text Inspector | Character count, code points, words, lines, and byte size by encoding | `devkin://text` |
 | Markdown Preview | Live Markdown rendering. GitHub-Flavored Markdown, copy as HTML | `devkin://md` |
 | HTML Preview | Render HTML source instantly. Optional script execution (sandboxed) | `devkin://html` |
@@ -84,10 +85,11 @@ Download the `.dmg` from [GitHub Releases](https://github.com/lsh2613/homebrew-d
 |----------|--------|
 | `⌘ K` | Move focus to the search box. Expands the sidebar first if collapsed |
 | `⌘ 1` | Expand / collapse the sidebar |
-| `↑` / `↓` | Move between items in the feature list |
+| `↑` / `↓` | Move between items in the feature list; from the search box, step to the active feature |
 | `Enter` | Open the selected feature / open the first search result |
 | `Esc` | Move focus to the feature page / clear the search query |
 | `Tab` | Cycle to the next element within the current area (sidebar or feature page) |
+| Type any character | While in the feature list, typing focuses the search box and starts a new query |
 
 ---
 
