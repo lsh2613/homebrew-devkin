@@ -11,6 +11,9 @@
 ### 🐞 버그 수정
 - <!-- 어떤 오류나 버그가 해결되었는지 상세 내용을 적어주세요. -->
 
+### 📦 기타
+- <!-- 사용자에게 직접적인 영향은 없지만 알릴 만한 변경 사항을 적어주세요. (의존성 업데이트, 내부 구조 변경 등) -->
+
 ## 설치 / 업그레이드
 
 ```sh
@@ -32,6 +35,9 @@ brew update && brew upgrade --cask devkin     # 업데이트
 
 ### 🐞 Bug Fixes
 - <!-- Describe which issues/bugs have been fixed (user-facing). -->
+
+### 📦 Miscellaneous
+- <!-- Changes worth noting that don't directly affect users (dependency updates, internal restructuring, etc.) -->
 
 ## Install / Upgrade
 
