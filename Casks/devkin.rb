@@ -1,12 +1,12 @@
 cask "devkin" do
-  version "1.0.0"
+  version "1.1.0"
 
   on_arm do
-    sha256 "f7aa64af8749377cfd1ed8740977fde231bd81f7c007fa2a9f6efca5ecdfd040"
+    sha256 "b0a94ac1904b064a6b5a322b1747831ba6b990cc56c219fc8a2b71de0c9c2a44"
     url "https://github.com/lsh2613/homebrew-devkin/releases/download/v#{version}/DevKin-#{version}-arm64.dmg"
   end
   on_intel do
-    sha256 "3edabe298c68f6006089acf18201972f4cb4319a1f5f590e3b8f7913865baf6b"
+    sha256 "a6bf0bdfc7ec0deb896b779110325b45bc4e05b082d4ea6f2142a072541b4a95"
     url "https://github.com/lsh2613/homebrew-devkin/releases/download/v#{version}/DevKin-#{version}-x64.dmg"
   end
 
