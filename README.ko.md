@@ -13,6 +13,8 @@
 
 ## DevKin이란?
 
+![readme-ko.png](./docs/assets/readme-ko.png)
+
 개발하다 보면 반복적으로 필요한 작은 작업들이 있습니다. JSON 확인, Base64 변환, JWT 디코딩, SQL 정렬... 브라우저 탭을 열고, 사이트를 찾고, 입력하는 그 귀찮음을 없애줍니다.
 
 DevKin은 macOS 네이티브 앱으로 자주 쓰는 개발 도구를 한 곳에 담았습니다.
@@ -50,6 +52,33 @@ open devkin://json   # 터미널에서 JSON Converter 바로 열기
 ```
 
 > 딥링크로 기능을 열면 클립보드에 복사해 둔 값이 입력란에 자동으로 채워집니다. 사이드바에서 직접 클릭해 열 때는 자동 입력되지 않습니다.
+
+---
+
+## 기능 미리보기
+
+<table>
+  <tr>
+    <th width="50%" valign="top">
+      JSON
+      <img src="docs/assets/json.png" alt="json" />
+    </th>
+    <th width="50%" valign="top">
+      Diff
+      <img src="docs/assets/diff.png" alt="diff" />
+    </th>
+  </tr>
+  <tr>
+    <th width="50%" valign="top">
+      JWT
+      <img src="docs/assets/jwt.png" alt="json" />
+    </th>
+    <th width="50%" valign="top">
+      Text Inspector
+      <img src="docs/assets/regex.png" alt="diff" />
+    </th>
+  </tr>
+</table>
 
 ---
 

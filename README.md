@@ -13,6 +13,8 @@
 
 ## What is DevKin?
 
+![readme.png](./docs/assets/readme.png)
+
 There are small tasks you reach for constantly while coding — checking JSON, encoding Base64, decoding a JWT, formatting SQL. DevKin eliminates the friction of opening a browser tab, finding a site, and typing it in.
 
 DevKin is a native macOS app that bundles the developer tools you use most into one place. macOS 12 Monterey or later, Apple Silicon and Intel Mac supported.
@@ -52,6 +54,33 @@ open devkin://json   # Open JSON Converter directly from the terminal
 ```
 
 > Opening a feature through a deep link auto-fills the input with whatever you copied to the clipboard. Clicking a feature directly in the sidebar does not auto-fill.
+
+---
+
+## Feature Preview
+
+<table>
+  <tr>
+    <th width="50%" valign="top">
+      JSON
+      <img src="docs/assets/json.png" alt="json" />
+    </th>
+    <th width="50%" valign="top">
+      Diff
+      <img src="docs/assets/diff.png" alt="diff" />
+    </th>
+  </tr>
+  <tr>
+    <th width="50%" valign="top">
+      JWT
+      <img src="docs/assets/jwt.png" alt="json" />
+    </th>
+    <th width="50%" valign="top">
+      Text Inspector
+      <img src="docs/assets/regex.png" alt="diff" />
+    </th>
+  </tr>
+</table>
 
 ---
 
