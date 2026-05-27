@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><img src="./icon.png" alt="" width="42" valign="middle" /> DevKin</h1>
+  <h1><img src="docs/assets/icon.png" alt="" width="42" valign="middle" /> DevKin</h1>
   <p>macOS 개발자를 위한 올인원 툴박스</p>
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/lsh2613/homebrew-devkin/total?style=flat-square&label=Downloads)](https://github.com/lsh2613/homebrew-devkin/releases)
