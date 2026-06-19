@@ -113,6 +113,10 @@ Download the `.dmg` from [GitHub Releases](https://github.com/lsh2613/homebrew-d
 | Shortcut | Action |
 |----------|--------|
 | `⌘ K` | Clear the current feature's input (when the Clear button is enabled) |
+| `⌘ F` | Search and highlight text within the current feature's panes |
+| `⌘ T` | Open a new tab (duplicates the active feature) |
+| `⌘ W` | Close the active tab |
+| `⌘ ⇧ [` / `⌘ ⇧ ]` | Switch to the previous / next tab |
 | `⌘ 1` | Expand / collapse the sidebar |
 | `↑` / `↓` | Move between items in the feature list; from the search box, step to the active feature |
 | `Enter` | Open the selected feature / open the first search result |
