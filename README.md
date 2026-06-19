@@ -89,14 +89,16 @@ open devkin://json   # Open JSON Converter directly from the terminal
 ### Homebrew (recommended)
 
 ```bash
-brew install --cask lsh2613/devkin/devkin
+brew trust lsh2613/devkin && brew install --cask lsh2613/devkin/devkin
 ```
 
 Update:
 
 ```bash
-brew upgrade --cask devkin
+brew trust lsh2613/devkin && brew upgrade --cask devkin
 ```
+
+> `brew trust` is required once because DevKin ships from a third-party tap; Homebrew refuses to load casks from untrusted taps. Trusting it again on later runs is harmless.
 
 ### Direct download
 

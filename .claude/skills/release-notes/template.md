@@ -17,8 +17,8 @@
 ## 설치 / 업그레이드
 
 ```sh
-brew install --cask lsh2613/devkin/devkin     # 신규 설치
-brew update && brew upgrade --cask devkin     # 업데이트
+brew trust lsh2613/devkin && brew install --cask lsh2613/devkin/devkin   # 신규 설치
+brew trust lsh2613/devkin && brew update && brew upgrade --cask devkin   # 업데이트
 ```
 
 ---
@@ -42,6 +42,6 @@ brew update && brew upgrade --cask devkin     # 업데이트
 ## Install / Upgrade
 
 ```sh
-brew install --cask lsh2613/devkin/devkin     # fresh install
-brew update && brew upgrade --cask devkin     # upgrade
+brew trust lsh2613/devkin && brew install --cask lsh2613/devkin/devkin   # fresh install
+brew trust lsh2613/devkin && brew update && brew upgrade --cask devkin   # upgrade
 ```

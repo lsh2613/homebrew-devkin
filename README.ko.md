@@ -87,14 +87,16 @@ open devkin://json   # 터미널에서 JSON Converter 바로 열기
 ### Homebrew (권장)
 
 ```bash
-brew install --cask lsh2613/devkin/devkin
+brew trust lsh2613/devkin && brew install --cask lsh2613/devkin/devkin
 ```
 
 업데이트:
 
 ```bash
-brew upgrade --cask devkin
+brew trust lsh2613/devkin && brew upgrade --cask devkin
 ```
+
+> DevKin은 서드파티 탭에서 배포되어 Homebrew가 신뢰하지 않은 탭의 cask 로드를 거부하므로, 최초 1회 `brew trust`가 필요합니다. 이후 다시 실행해도 무해합니다.
 
 ### 직접 다운로드
 
